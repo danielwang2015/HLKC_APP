@@ -16,6 +16,7 @@ import {
 //import HomeStyle from './style'
 import HeadBack from '../../components/BackMenu'
 
+// test
 
 export default class AboutUS extends Component {
     static navigationOptions = {
