@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>定位</title>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=79f3054e78b11d21cd00af02fb1a0c8a"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="commonLocation.js"></script>
+    <style type="text/css">
+        #container {
+            height: 330px;
+            width: 330px;
+            border-radius: 165px;
+            position: relative;
+            overflow: hidden;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            -khtml-opacity: 0.8;
+            opacity: 0.8;
+            white-space: nowrap;
+            align-items: center;
+            left:5px;
+            top:5px;
+            background-image: url("../images/mapcircle.png");
+            background-size:330px 330px;
+        }
+        
+        .outCircle {
+            height: 336px;
+            width: 336px;
+            border-radius: 168px;
+            position: absolute;
+            overflow: hidden;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            -khtml-opacity: 0.8;
+            opacity: 0.8;
+            white-space: nowrap;
+            align-items: center;
+            background-image: url("../images/rectangle.png");
+            background-size:336px 336px;
+        }
+        .amap-e, .amap-layers, .amap-maps, .amap-tile, .amap-tile-container{
+            border-radius: 135px;
+        }
+        .amap-info-outer, .amap-menu-outer
+        {
+            border-radius: 12px;
+        }
+        .m-demo {
+            position: relative;
+            width: 270px;
+            height: 270px;
+            overflow: hidden;
+            align-items: center;
+            left:29px;
+            top:27px;
+            border-radius: 135px;
+        }
+        
+        .m-demo img {
+            position: absolute;
+            display: block;
+        }
+        
+        .m-demo img.hidden {
+            visibility: hidden;
+            position: static;
+        }
+        
+        .m-demo {
+            float: left;
+            display: inline;
+        }
+        
+        .amap-icon img {
+            width: 48px;
+            height: 48px;
+        }
+    </style>
+</head>
+
+<body >
+    <div class="outCircle">
+    <div id="container">
+        <div id="map" class="m-demo">
+
+        </div>
+
+    </div>
+    </div>
+    <script>
+        var marker, lineArr = [];
+
+        var map = new AMap.Map("map", {
+            resizeEnable: true,
+            center: [121.4402, 31.192139],
+            zoom: 15,
+
+        });
+
+        marker = new AMap.Marker({
+            map: map,
+            position: [121.4402, 31.192139],
+            icon: "../images/Location_Icon.png",
+            offset: new AMap.Pixel(-10, -10),
+            autoRotation: true
+        });
+        infoWindow = new AMap.InfoWindow({
+            content: '<div style="font-size:12px;border-radius:5px;">五分钟之前的位置</div>',
+        });
+        infoWindow.open(map, [121.4402, 31.192139]);
+        
+        
+
+        var userID = getUrlParam("UserID");
+
+        alert(userID);
+        
+    </script>
+</body>
+
+</html>
