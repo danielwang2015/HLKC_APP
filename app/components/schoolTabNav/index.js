@@ -32,7 +32,7 @@ export default class SchoolTabNav extends Component {
     this.resetAddrBookAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({ routeName: 'AddrBook'})
+        NavigationActions.navigate({ routeName: 'Location'})
       ]
     });
 
@@ -46,7 +46,7 @@ export default class SchoolTabNav extends Component {
     this.resetSchoolAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({ routeName: 'School'})
+        NavigationActions.navigate({ routeName: 'AlertZone'})
       ]
     });
 
@@ -69,13 +69,13 @@ export default class SchoolTabNav extends Component {
         <TouchableOpacity
           style={styles.cell}
           onPress={() => {
-            if (this.screenName !== 'AddrBook') {
+            if (this.screenName !== 'Location') {
               this.navigation.dispatch(this.resetAddrBookAction);
             }
           }}
         >
           <Image style={styles.tabIcon} source={AddrBookIcon} />
-          <Text style={styles.iconLabel}>通讯录</Text>
+          <Text style={styles.iconLabel}>地图</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.cell}
@@ -86,18 +86,18 @@ export default class SchoolTabNav extends Component {
           }}
         >
           <Image style={styles.tabIcon} source={FriendIcon} />
-          <Text style={styles.iconLabel}>朋友圈</Text>
+          <Text style={styles.iconLabel}>任务</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.cell}
           onPress={() => {
-            if (this.screenName !== 'School') {
+            if (this.screenName !== 'AlertZone') {
               this.navigation.dispatch(this.resetSchoolAction);
             }
           }}
         >
           <Image style={styles.tabIcon} source={SchoolIcon} />
-          <Text style={styles.iconLabel}>我的</Text>
+          <Text style={styles.iconLabel}>团队</Text>
         </TouchableOpacity>
       </View>
     );

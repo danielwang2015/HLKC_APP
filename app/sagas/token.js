@@ -21,6 +21,7 @@ export function* handleRefreshJwtToken(action) {
         Authorization: `Bearer ${local_access_token}`
       }
     }
+    
     const response = yield call(axios, apiConfig);
     yield setAccessToken(response.data.access_token);
     yield put({type: types.SIGN_IN_SUCCEEDED, payload: response.data});

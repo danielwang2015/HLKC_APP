@@ -18,9 +18,11 @@ import styles from './style'
 import HomeHead from '../../components/HomeHead'
 import HomeFoot from '../../components/BottomMenu'
 import { User_ID_Key } from '../../common/config';
+import SchoolTabNav from '../../components/schoolTabNav';
+
 export default class Location extends Component {
     static navigationOptions = {
-        title: '当前位置'
+        title: '水体健康地图'
     };
 
     constructor(props) {
@@ -44,7 +46,8 @@ export default class Location extends Component {
 
     render() {
         return (
-            <ScrollView style={styles.container}>
+            <View style={styles.container}>
+            <ScrollView>
 
                 <View style={styles.WebBackground}>
                 <Image style={styles.WebStyle} source={require('../Images/MapGround.png')} >
@@ -56,8 +59,10 @@ export default class Location extends Component {
                     </Image>
                 </View>
 
-
             </ScrollView>
+
+            <SchoolTabNav navigation={this.props.navigation} />
+            </View>
         );
     }
 }

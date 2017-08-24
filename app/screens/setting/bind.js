@@ -7,7 +7,7 @@ import {
     View,
     ListView
 } from 'react-native';
-import styles from './style';
+// import styles from './style';
 
 import ImgQRCode from './../../images/settings/qrcode.png'
 
@@ -25,22 +25,53 @@ class Bind extends Component {
         const { navigation } = this.props;
 
         return (
-            <View
-                style={styles.container}>
-                <View style={styles.bind}>
-                    <View style={styles.twoside}>
-                        <Image style={styles.qrcode} source={ImgQRCode}/>
+            <View style={styles.container}>
+                <View style={styles.header}>
+                    <Text>Header</Text>
+                    <View style={styles.headerTitle}>
+                        <Text style={styles.htLeft}>植树节</Text>
+                        <Text style={styles.htRight}>2017/5/15</Text>
                     </View>
-                    <View style={styles.twoside}>
-                        <TouchableHighlight>
-                            <View><Text>* 校徽设备由学校统一发放与绑定</Text> 
-                                <Text>* 无需人工干预</Text>   
-                                <Text>* 如有问题请拨打客服电话</Text>
-                                <Text></Text></View>
-                        </TouchableHighlight>
-                    </View>
+                </View>
+                <View style={styles.main}>
+                    <Text>Main</Text>
+                </View>
+                <View style={styles.bottom}>
+                    <Text>Bottom</Text>
                 </View>
             </View>
         );
     }
-} ;
+};
+
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor: 'red',
+        flexDirection:'column',
+    },
+    header:{
+        flex:1,
+        backgroundColor:'blue',
+    },
+    headerTitle:{
+        flexDirection:'row',
+    },
+    htLeft:{
+        flex:4,
+    },
+    htRight:{
+        flex:1,
+    },
+    main:{
+        flex:2,
+        backgroundColor:'yellow',
+    },
+    bottom:{
+        flex:1,
+        backgroundColor:'green',
+    },
+});
+
+

@@ -36,38 +36,38 @@ export default class BottomMenu extends Component {
             <View style={styles.bottomMenu}>
                 <TouchableOpacity
                     onPress={() => {
-                        navigation.navigate('Location')
+                        navigation.navigate('Home')
                     }}
                 >
                     <View style={styles.centerItem}>
                         <Image style={styles.bottomImg} source={require('../screens/Images/U_Location.png')} >
 
                         </Image>
-                        <Text style={styles.BottomText}>实时定位</Text>
+                        <Text style={styles.BottomText}>首页</Text>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress={() => {
-                        navigation.navigate('Trace')
+                        navigation.navigate('Location')
                     }}
                 >
                 <View style={styles.centerItem}>
                     <Image style={styles.bottomImg} source={require('../screens/Images/Tract_Icon.png')} >
 
                     </Image>
-                    <Text style={styles.BottomText}>轨迹回放</Text>
+                    <Text style={styles.BottomText}>地图</Text>
                 </View>
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress={() => {
-                        navigation.navigate('AlertZone')
+                        navigation.navigate('Friend')
                     }}
                 >
                 <View style={styles.centerItem}>
                     <Image style={styles.bottomImg} source={require('../screens/Images/Alert_Zone.png')} >
 
                     </Image>
-                    <Text style={styles.BottomText}>预警区域</Text>
+                    <Text style={styles.BottomText}>团队</Text>
                 </View>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -79,7 +79,7 @@ export default class BottomMenu extends Component {
                     <Image style={styles.bottomImg} source={require('../screens/Images/School.png')} >
 
                     </Image>
-                    <Text style={styles.BottomText}>宝贝学校</Text>
+                    <Text style={styles.BottomText}>任务</Text>
                 </View>
                 </TouchableOpacity>
             </View>
@@ -114,15 +114,13 @@ const styles = StyleSheet.create({
     },
 
 
-
     bottomMenu: {
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: '#D3D3D3',
         marginTop: -30,
-        height: 100,
+        height: 80,
     },
     bottomImg: {
         width: 25 * onePT,

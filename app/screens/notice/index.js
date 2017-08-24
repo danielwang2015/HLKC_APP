@@ -15,7 +15,7 @@ import imgUnread from '../../images/notice/unread.png'
 export default
 class Notice extends Component {
     static navigationOptions = {
-        title: '公告',
+        title: '团队',
     };
 
     constructor(props) {

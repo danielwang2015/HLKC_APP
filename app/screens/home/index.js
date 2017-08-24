@@ -15,7 +15,7 @@ import {
     AsyncStorage,
 } from 'react-native';
 import { DrawerNavigator } from 'react-navigation';
-import HomeFoot from '../../components/BottomMenu'
+import SchoolTabNav from '../../components/schoolTabNav';
 import LeftMenuScreen from '../LeftMenu'
 import SideMenu from 'react-native-side-menu';
 import { bindActionCreators } from 'redux';
@@ -133,54 +133,13 @@ class Home extends Component {
                         </View>
                     </View>
 
-                    <View style={styles.WebBackground}>
-                        <View style={styles.mapBackground}>
-                            <WebView style={styles.WebStyle} startInLoadingState={true}
-                                source={{
-                                    uri: 'http://www.isupcore.com/home/mylocation.html?UserID=' + this.state
-                                        .UserID
-                                }}>
-
-                            </WebView>
-
-                        </View>
+                    <View style={styles.main}>
+                        <Text>This is img...</Text>
+                        <Text>Link to ...</Text>
+                        <Text>Latest news...</Text>
                     </View>
 
-                    <View style={styles.ChildBackground}>
-                        <View style={styles.ChildLevel}>
-                            <Image style={styles.centerItem} source={require('../Images/U_Level.png')} >
-                                <Text style={styles.ChildText}>L.6</Text>
-                            </Image>
-                        </View>
-                        <View style={styles.ChildHead}>
-                            <Image style={styles.ChildHeadImage} source={require('../Images/child head.png')} >
-
-                            </Image>
-                        </View>
-                        <View style={styles.ChildSign}>
-                            <TouchableHighlight
-                                onPress={() => userSignOn()}>
-                                <Image style={styles.centerItem} source={require('../Images/U_Singup.png')} >
-                                    <Text style={styles.ChildText}>{
-                                        this.state.IsSigned ? "已签到" : "未签到"
-                                    }</Text>
-                                </Image>
-                            </TouchableHighlight>
-                        </View>
-                    </View>
-                    <View style={styles.ChildName}>
-                        <Text style={styles.ChildNameLeftText}>
-                                 ——     
-                                </Text>
-                                <Text style={styles.ChildNameText}>
-                                 {myself ? myself.stu_Name : ''}
-                                </Text>
-                                <Text style={styles.ChildNameRightText}>
-                                      ——
-                                </Text>
-                    </View>
-
-                    <HomeFoot navigation={this.props.navigation} />
+                    <SchoolTabNav navigation={this.props.navigation} />
 
                 </View>
 
@@ -205,9 +164,8 @@ const styles = StyleSheet.create({
         height: 24,
     },
     top: {
-        flex: 1,
         flexDirection: 'row',
-        marginTop: 3,
+        marginTop: 20,
         //backgroundColor: '#6495ED',
         height: 32,
         alignItems: 'center',
@@ -237,126 +195,8 @@ const styles = StyleSheet.create({
         width: 34,
         height: 28,
     },
-    centerItem: {
-        alignItems: 'center',
-        justifyContent: 'center',
-
-    },
-    topText: {
-        backgroundColor: 'rgba(222,215,206,0)',
-        fontSize: 16,
-        color: '#8B8970',
-    },
-
-
-    contentWrap: {
-        flex: 1,
-        flexDirection: 'column',
-        //backgroundColor: '#12ff12',
-        //alignItems : 'center',
-        //justifyContent: 'center',
-    },
-
-    WebBackground: {
-        flex: 0,
-        //width: Dimensions.get('window').width,
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        //backgroundColor: '#E9E4DB',
-        //marginLeft: 2 * onePT,
-        marginTop: 3,
-    },
-    mapBackground: {
-        flex: 0,
-        flexDirection: 'column',
-        width: 170 * onePT,
-        height: 170 * onePT,
-        borderRadius: 85 * onePT,
-        //overflow: 'hidden',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: -8 * onePT,
-        //marginLeft : 2 * onePT,
-        marginBottom: 14,
-        //backgroundColor: '#E9E4DB',
-    },
-    WebStyle: {
-        flex: 1,
-        flexDirection: 'row',
-        overflow: 'hidden',
-        width: 180 * onePT,
-        height: 180 * onePT,
-        borderRadius: 90 * onePT,
-        //backgroundColor: '#E9E4DB',
-        marginTop: -4 * onePT,
-        backgroundColor: 'rgba(222,215,206,0)',
-    },
-
-    ChildBackground: {
-        flex: 1,
-        flexDirection: 'row',
-        //marginLeft: 3 * onePT,
-        marginTop: 3 * onePT,
-        justifyContent: 'center',
-        alignItems: 'center',
-        //paddingTop: -8 * onePT,
-    },
-    ChildLevel: {
-        marginRight: 2 * onePT,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    ChildHead: {
-        marginLeft: -7 * onePT,
-        marginRight: -7 * onePT,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    ChildName: {
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: -30,
-
-    },
-    ChildHeadImage: {
-        width: 60 * onePT,
-        height: 60 * onePT,
-    },
-    ChildNameImage: {
-        width: 140,
-        height: 16,
-        marginTop: -18,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    ChildSign: {
-        marginLeft: 2 * onePT,
-        marginRight: 4 * onePT,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    ChildText: {
-        fontSize: 15,
-        color: '#CD6600',
-        backgroundColor: 'rgba(222,215,206,0)',
-    },
-    ChildNameText:{
-        fontSize: 19,
-        color: '#CD6600',
-        backgroundColor: 'rgba(222,215,206,0)',
-        marginLeft: 20,
-        marginRight:20,
-    },
-    ChildNameLeftText:{
-        fontSize: 19,
-        color: '#DAD2CE',
-    },
-    ChildNameRightText:{
-        fontSize: 19,
-        color: '#DAD2CE',
+    main:{
+        flex:1,
     },
     bottom: {
         height: 80,

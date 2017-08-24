@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTBatchedBridge.m \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Modules/RCTDevLoadingView.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTDisplayLink.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Modules/RCTRedBox.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTErrorCustomizer.h \
+  /Users/sicon/working/02_projects/02_libs/ba/HLKC_APP/node_modules/react-native/React/Base/RCTUtils.h
