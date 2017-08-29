@@ -29,7 +29,6 @@ class LaunchScreen extends Component {
     AsyncStorage.getItem(LOCAL_ACCESS_TOKEN_NAME).then((value) => {
 
       // setTimeout(() => navigation.navigate('SignIn'), 1000);
-
       if (value) {
         refreshJwtToken();
       } else {
