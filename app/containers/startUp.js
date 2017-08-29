@@ -57,6 +57,8 @@ import AlertZoneScreen from  '../screens/AlertZone';
 import NewsScreen from '../screens/News';
 import NewsDetailScreen from '../screens/News/NewsDetail';
 
+import TaskScreen from '../screens/task';
+
 export class StartUpApp extends Component {
 
     constructor(props) {
@@ -259,12 +261,17 @@ export class StartUpApp extends Component {
               description: 'The news Detail Screen',
               screen: NewsDetailScreen,
             },
+            Task:{
+              name: 'Task Index',
+              description: 'new task?',
+              screen: TaskScreen,
+            },
         };
 
         const stackNavigatorConfig = {
             headerMode: 'screen',
             mode: 'card',
-            initialRouteName: 'Launch'
+            initialRouteName: 'Task'
         };
 
         const AppNavigator = StackNavigator(
